@@ -56,7 +56,7 @@
 			<value>com.mysql.jdbc.Driver</value>
 		</property>
 		<property name="jdbcUrl">
-			<value>jdbc:mysql://bj-cdb-3rsaohl3.sql.tencentcdb.com:62818/marry</value>
+			<value>jdbc:mysql://172.21.0.7:3306/marry</value>
 		</property>
 		<property name="minPoolSize">
 			<value>1</value>

@@ -223,10 +223,10 @@ public class MobileController {
 	private String saveComment(HttpServletRequest request,
 			HttpServletResponse response)throws Exception {
 		
-		String nickName = new String(request.getParameter("nickName").getBytes("ISO-8859-1"),"UTF-8");
-		String comment = new String(request.getParameter("comment").getBytes("ISO-8859-1"),"UTF-8");
-		//String nickName = request.getParameter("nickName");
-		//String comment = request.getParameter("comment");
+		//String nickName = new String(request.getParameter("nickName").getBytes("ISO-8859-1"),"UTF-8");
+		//String comment = new String(request.getParameter("comment").getBytes("ISO-8859-1"),"UTF-8");
+		String nickName = request.getParameter("nickName");
+		String comment = request.getParameter("comment");
 		String nickImage = request.getParameter("nickImage");
 		String time = request.getParameter("time");
 		String openId = request.getParameter("openId");
@@ -305,10 +305,10 @@ public class MobileController {
 			String path = "";
 			if ("banner".equals(type)) {
 				path = request.getSession().getServletContext().getRealPath("/wechat")+"/marry/banner/";
-				baseUrl = "http://localhost:8080/party/wechat/marry/banner/";
+				baseUrl = "http://www.forlangel.cn:8080/party/wechat/marry/banner/";
 			}else {
 				path = request.getSession().getServletContext().getRealPath("/wechat")+"/marry/"+moduleId+"/";
-				baseUrl = "http://localhost:8080/party/wechat"+"/marry/"+moduleId+"/";
+				baseUrl = "http://www.forlangel.cn:8080/party/wechat"+"/marry/"+moduleId+"/";
 			}
 			System.out.println("path:"+path);
 			File file = new File(path);

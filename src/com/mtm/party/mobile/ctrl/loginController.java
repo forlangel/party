@@ -39,8 +39,8 @@ public class loginController {
         //http://www.shike.com.cn/index/WeiXinTest是手机用户扫码后会执行的后台方法
         //www.shike.com.cn此域名要与微信公共平台配置的一致
         String url="https://open.weixin.qq.com/connect/oauth2/authorize?" +
-                "appid=wxc028256ea6d51af1&" +
-                "redirect_uri=http://localhost:8080/party/index/WeiXinTest&" +
+                "appid=wxd9a419b146ff9b1b&" +
+                "redirect_uri=http://www.forlangel.cn:8080/party/index/WeiXinTest&" +
                 "response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect";
         //将url转换成短链接，提高扫码速度跟成功率
         String shorturl=wxU.shortURL(url, wxU.appid, wxU.appSecret);
