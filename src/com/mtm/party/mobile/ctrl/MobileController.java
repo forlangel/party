@@ -185,8 +185,8 @@ public class MobileController {
 	 */
 	private String savePraise(HttpServletRequest request,
 			HttpServletResponse response) throws UnsupportedEncodingException {
-		//String nickName = request.getParameter("nickName");
-		String nickName = new String(request.getParameter("nickName").getBytes("ISO-8859-1"),"UTF-8");
+		String nickName = request.getParameter("nickName");
+		//String nickName = new String(request.getParameter("nickName").getBytes("ISO-8859-1"),"UTF-8");
 		String nickImage = request.getParameter("nickImage");
 		String openId = request.getParameter("openId");
 		try {
